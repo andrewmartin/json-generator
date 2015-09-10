@@ -52,14 +52,13 @@ function writeFile(filesMap) {
   console.log('writing', filesMap);
   var result = dummyjson.parse(template, {
     data: {
-      products: filesMap
+      items: filesMap
     }
   });
   fs.writeFile("./tmp/" + OPT.directory + ".json", result, function(err) {
     if (err) {
       return console.log(err);
     }
-    // console.log('result', result);
   });
 }
 

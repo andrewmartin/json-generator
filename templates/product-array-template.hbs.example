@@ -1,5 +1,5 @@
 [
-{{#repeat products}}
+{{#repeat items}}
 {
   "title": "{{this.file}}",
   "product_number": "75093",
