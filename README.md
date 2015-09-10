@@ -14,5 +14,5 @@ Usage:
 ### Examples:
 
 ``` sh
-node index --dir=01_ProductListing-StarWars --template=product-array-template`
+node index --dir=01_ProductListing-StarWars --template=product-array-template
 ```
