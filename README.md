@@ -2,7 +2,12 @@
 
 A simple (and hacky) tool to generate JSON using a HBS template.
 
-Right now, it essentially scans a directory, grabs the names of all those files, and tosses them into a defined template.
+Right now, it essentially:
+
+1. Scans a directory
+2. Grabs the filenames in that directory
+3. Tosses the filenames into a defined handlebars template
+4. Generates a JSON file based on this template
 
 Usage:
 
