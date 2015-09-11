@@ -34,7 +34,8 @@ function readFiles() {
         var pathArray = fileName.split('/');
         var fileName = pathArray[pathArray.length - 1];
         return {
-          file: fileName
+          file: fileName,
+          options: OPT
         };
       });
       deferred.resolve(filesMap);
