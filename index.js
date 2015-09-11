@@ -9,8 +9,9 @@ var fs = require('fs'),
 // set up OPTIONS
 var OPT = {
   directory: argv.dir || '01_ProductListing-StarWars',
-  template: argv.template || 'product-array-template'
+  template: argv.template || 'product-array-template',
 };
+OPT.path = argv.path || __dirname + '/../' + OPT.directory;
 
 var template = fs.readFileSync('./templates/' + OPT.template + '.hbs', {
   encoding: 'utf8'
@@ -22,7 +23,7 @@ var deferred = Q.defer();
 console.log('Creating JSON from directory:\n', OPT.directory, '\nUsing template:\n', OPT.template);
 
 function readFiles() {
-  dir.readFiles(__dirname + '/../' + OPT.directory,
+  dir.readFiles(OPT.path,
     function(err, content, filename, next) {
       if (err) throw err;
       fileNamesArray.push(filename);
