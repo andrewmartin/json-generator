@@ -43,5 +43,5 @@ node index --dir=01_ProductListing-StarWars --template=product-array-template
 ```
 
 ```sh
-node index --path=~/Dropbox/Assets/02_SomeProject template=price-template
+node index --path=~/Dropbox/Assets/02_SomeProject --template=price-template
 ```
