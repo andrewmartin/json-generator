@@ -41,3 +41,7 @@ Provide the full path to the directory of images.
 ``` sh
 node index --dir=01_ProductListing-StarWars --template=product-array-template
 ```
+
+```sh
+node index --path=~/Dropbox/Assets/02_SomeProject template=price-template
+```

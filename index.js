@@ -11,7 +11,7 @@ var OPT = {
   directory: argv.dir || '01_ProductListing-StarWars',
   template: argv.template || 'product-array-template',
 };
-OPT.path = argv.path || __dirname + '/../' + OPT.directory;
+OPT.path = path.resolve(argv.path) || __dirname + '/../' + OPT.directory;
 
 var template = fs.readFileSync('./templates/' + OPT.template + '.hbs', {
   encoding: 'utf8'
