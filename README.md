@@ -28,7 +28,7 @@ Provide the name of the template, and place in templates/ dir.
 ```sh
 --dir (required)
 ```
-Provide the name of the directory. *Required even if path option is defined.*
+Provide the name of the directory. *Optional if path is provided.*
 
 ```sh
 --path (optional)
